@@ -67,3 +67,26 @@ body{
     text-align: center;
     word-spacing: 1vw;
 }
+
+.destinationform{
+    height: 50vh;
+    width: 70vw;
+    padding-top: 3vh;
+    margin-left:15vw ;
+    margin-right:15vw ;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+    border: 1vw black solid;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+form{
+    padding: 2vh 4vw;
+}
+
+input{
+    width: 100%;
+    height: 3vh;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
