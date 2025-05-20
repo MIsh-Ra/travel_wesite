@@ -11,22 +11,59 @@ body{
 .header{
     padding: 0;
     margin: 0;
-    height: 50vh ;
+    height: 75vh ;
     width:100%;
     background-image: url(media/navimage.png);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
 }
 
 
 .topbar{
-    height: 3vh;
+    height: 10vh;
     width:  100vw;
-    background-color: beige;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    
+
 }
 
-.logo{
-    height: 2.5vh;
-    width: 100vw;
+#logo{
+    padding-top:0.5vh;
+    padding-left: 4vw;
+    height: 7.5vh;
+    width: 20vw;
+    overflow-y: auto;
+}
+
+#menu{
+    padding-top: 1vh;
+    padding-right: 2vw;
+    height: 5vh;
+    width: 10vw;
+    overflow-y: auto;
+}
+
+#main{
+    color: oldlace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:8vw ;
+    text-align: center;
+    word-spacing: 2vw;
+}
+
+#sub{
+
+    padding:10vw 10vw;
+    color: oldlace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 375;
+    font-size: 4vw;
+    text-align: center;
+    word-spacing: 1vw;
 }
