@@ -1,0 +1,22 @@
+*{
+    padding: 0;
+    margin:  0;
+}
+
+body{
+    height: 200vh;
+    width: 100vw;
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    height: 50vh ;
+    width:100%;
+    background-image: url(media/navimage.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
