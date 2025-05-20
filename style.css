@@ -20,3 +20,13 @@ body{
 }
 
 
+.topbar{
+    height: 3vh;
+    width:  100vw;
+    background-color: beige;
+}
+
+.logo{
+    height: 2.5vh;
+    width: 100vw;
+}
