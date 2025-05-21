@@ -34,7 +34,7 @@ body{
 }
 
 #logo{
-    padding-top:0.5vh;
+    padding-top:1vh;
     padding-left: 4vw;
     height: 7.5vh;
     width: 20vw;
@@ -42,7 +42,7 @@ body{
 }
 
 #menu{
-    padding-top: 1vh;
+    padding-top: 2vh;
     padding-right: 2vw;
     height: 5vh;
     width: 10vw;
@@ -69,24 +69,84 @@ body{
 }
 
 .destinationform{
-    height: 50vh;
+    height: 55vh;
     width: 70vw;
     padding-top: 3vh;
     margin-left:15vw ;
     margin-right:15vw ;
     margin-top: 15vw;
     margin-bottom: 15vw;
-    border: 1vw black solid;
+    border-radius: 5vw;
+    border: 1vw black none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+
+}
+.head2{
+    /* padding-top: 10%; */
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.head3{
+        padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 form{
-    padding: 2vh 4vw;
+    padding-left: 0 4vw;
+    margin: 1vh 3vw;
 }
 
-input{
+input[type=text]{
     width: 100%;
-    height: 3vh;
-    border-radius: 10px;
+    height: 5vh;
+    border-radius: 10vw;
     box-sizing: border-box;
+    padding:5%  ;
+    font-size: 4vw;
+    font-weight: 400;
 }
+
+/* #Location{
+    background-image: url(media/pin.png);
+    background-repeat: no-repeat;
+    background-position: 10px  center;
+    background-size: 16px 16px;
+    padding-left: 10px  ;
+    height: 40px;
+} */
+
+
+input[type=date]{
+    width: 100%;
+    height: 5vh;
+    border-radius: 10vw;
+    box-sizing: border-box;
+    padding: 5%;
+    font-size: 3.5vw;
+    font-weight: 400;
+
+}
+
+
+
+.submit{
+    
+    background-color: rgb(250, 60, 95);
+    text-align: center;
+    color: aliceblue;
+    border-radius: 40vw;
+    width: 80%;
+    height: 15%;
+    box-sizing: border-box;
+    padding: .25vw;
+    margin: 10%;
+}
+
+label{
+    opacity: 40%;
+    padding-left: 5%;
+}
+
