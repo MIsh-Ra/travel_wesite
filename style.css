@@ -95,6 +95,8 @@ body{
 }
 .head2{
     /* padding-top: 10%; */
+    opacity:20%;
+    font-size: medium;
     padding-left: 10%;
     padding-right: 10%;
 }
@@ -146,11 +148,13 @@ input[type=date]{
 .submit{
     
     background-color: rgb(250, 60, 95);
+    font-family:        Helvetica, sans-serif;
+    font-size: large;
     text-align: center;
     color: aliceblue;
     border-radius: 40vw;
     width: 80%;
-    height: 15%;
+    height: 15vw;
     box-sizing: border-box;
     padding: .25vw;
     margin: 10%;
@@ -162,7 +166,7 @@ label{
 }
 
 .packages{
-    height: 85vh;
+    height: 97vh;
     width: 75vw;
     /* border: 1px black solid; */
     padding-top: 2%;
@@ -171,6 +175,7 @@ label{
     margin-left: 5%;
     margin-right: 5%;
     overflow: scroll;
+    border-radius: 5vw;
 
     /* box-sizing: border-box; */
     box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
@@ -195,6 +200,7 @@ label{
 }
 
 .packagebox{
+    background-color: #fff;
     box-sizing: border-box;
     display: flex;
     padding: 5% 5%;
@@ -312,4 +318,116 @@ label{
     font-weight: 400;
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
     bottom: 0;
+}
+
+.recommendations{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    height: 240vh;
+    width: 75vw;
+    /* border: 1px black solid; */
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+    border-radius: 5vw;
+
+    /* box-sizing: border-box; */
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    gap: 5vw 0vw;
+}
+
+.rec_cards{
+    background-color: #fff;
+    pad: 1%;
+    margin: 1%;
+    height: 50vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    border-radius: 5vw;
+
+
+}
+
+#rec1{
+
+    height: 35vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    background-image: url(media/beach1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.lines{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+
+.rating{
+    /* border: 1px black solid; */
+    position: relative;
+    top:0.5vh ;
+    right: -6vw;
+    padding:1% 1%;
+    height: 20px;
+    width: 20px;
+    background-image: url(media/star.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.line1{
+    display: flex;
+    flex-direction: row;
+}
+
+.line1 h2{
+    padding: 2%;
+    font-size: larger;
+}
+
+.rat_val{
+    position: relative;
+    top: 2.5vw;
+    right: -7vw;
+    font-family: helvetica;
+    font-size: larger ;
+    font-weight: bolder;
+}
+
+.line3{
+    font-family: helvetica;
+height: 4%;
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+
+.book{
+    position: relative;
+    right: 5vw;
+    top:-3vw ;
+    width: 25vw;
+    height: 5vw;
+    background-color: rgb(250, 60, 95);
+    font-family:        Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 40vw;
+    padding: .25vw;
+    margin: 10%;
 }
