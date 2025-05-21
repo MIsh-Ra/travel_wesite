@@ -4,8 +4,14 @@
 }
 
 body{
-    height: 200vh;
+    height: 400vh;
     width: 100vw;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .header{
@@ -150,3 +156,148 @@ label{
     padding-left: 5%;
 }
 
+.packages{
+    height: 85vh;
+    width: 75vw;
+    /* border: 1px black solid; */
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+}
+
+.packageHead3{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.packagehead2{
+
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.packagebox{
+    box-sizing: border-box;
+    display: flex;
+    padding: 5% 5%;
+    height: 67vh;
+    width: 75vw;
+    flex-direction: row;
+    /* border: 1px black solid; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+
+    column-gap: 2vw;
+    row-gap: 2vw;
+}
+
+.packagesOptionsPair{
+    box-sizing: border-box;
+    display: flex;
+    height: 35vh;
+    width: 65vw;
+    /* border: 1px black solid; */
+    padding: 2.5%;
+    column-gap: 05vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+
+}
+
+
+/* Over the packages we can add a small enlarge animation like the on actual sites */
+
+.package1{
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    padding: 1% 1%;
+
+    /* border: 1px orange solid; */
+    background-image: url(media/brasil.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+    overflow: hidden;
+}
+
+.package2{
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    /* border: 1px orange solid; */
+    background-image: url(media/crotia.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 3vw;
+}
+.package3{
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    /* border: 1px orange solid; */
+    background-image: url(media/rome.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+    overflow: hidden;
+
+}
+
+.package4{
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    /* border: 1px orange solid; */
+    background-image: url(media/megh.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+    overflow: hidden;
+
+
+}
+
+.pacakgename{
+    font-family: Helvetica;
+    font-size: 5vw;
+    color:azure;
+    text-align: left;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.packageduration{
+    font-family: Helvetica;
+    font-size: 3vw;
+    color:azure;
+    text-align: left;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    bottom: 0;
+}
