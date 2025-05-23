@@ -122,14 +122,6 @@ input[type=text]{
     font-weight: 400;
 }
 
-/* #Location{
-    background-image: url(media/pin.png);
-    background-repeat: no-repeat;
-    background-position: 10px  center;
-    background-size: 16px 16px;
-    padding-left: 10px  ;
-    height: 40px;
-} */
 
 
 input[type=date]{
