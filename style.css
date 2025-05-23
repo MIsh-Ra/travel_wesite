@@ -4,7 +4,7 @@
 }
 
 body{
-    height: 800vh;
+    height: 850vh;
     width: 100vw;
 }
 .main{
@@ -316,7 +316,7 @@ label{
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    height: 240vh;
+    height: 270vh;
     width: 75vw;
     /* border: 1px black solid; */
     padding-top: 2%;
@@ -500,7 +500,7 @@ label{
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 200vh;
+    height: 220vh;
     width: 75vw;
     /* border: 1px black solid; */
     padding-top: 2%;
@@ -580,4 +580,42 @@ label{
     text-shadow: 10px 10px 40px red(0, 0, 0, 0.7);
     
 
+}
+
+.line{
+    height: 0.1px;
+    width: 100vw;
+    border: 1px solid black;
+    position: relative;
+    top: 15vh;
+}
+
+.footer{
+    background-color:white ;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 15vh;
+}
+
+#footer_title{
+    color: black;
+    text-align: center;
+    position: relative
+    top : 10vh;
+    font-family:Helvetica ;
+
+}
+
+.footer1{
+    height: 50vh;
+    width: 100vw;
+    background-color: white;
+
+}
+
+.footer2{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
 }
