@@ -1,10 +1,11 @@
-*{
+@media screen and (max-width:700px ) {
+    *{
     padding: 0;
     margin:  0;
 }
 
 body{
-    height: 850vh;
+    height: 800vh;
     width: 100vw;
 }
 .main{
@@ -61,6 +62,9 @@ body{
     font-size:8vw ;
     text-align: center;
     word-spacing: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #sub{
@@ -87,7 +91,11 @@ body{
     border: 1vw black none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 01px 0.5px 25px  rgb(202, 191, 191);
-
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    align-items: center;
     position: relative;
     top:-15vh;
     z-index: 1;
@@ -318,6 +326,8 @@ label{
     background-color: #fff;
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     height: 270vh;
     width: 75vw;
     /* border: 1px black solid; */
@@ -336,7 +346,7 @@ label{
 
 .rec_cards{
     background-color: #fff;
-    pad: 5%;
+    padding: 5%;
     margin: 5%;
     height: 50vh;
     width: 70vw;
@@ -504,6 +514,8 @@ overflow: auto;
     flex-direction: column;
     height: 220vh;
     width: 75vw;
+    justify-content: space-between;
+    align-items: center;
     /* border: 1px black solid; */
     padding-top: 2%;
     padding-left: 5%;
@@ -603,21 +615,678 @@ overflow: auto;
 #footer_title{
     color: black;
     text-align: center;
-    position: relative
+    position: relative;
     top : 10vh;
-    font-family:Helvetica ;
+    font-family: 'helvetica' ;
 
 }
 
-.footer1{
-    height: 50vh;
-    width: 100vw;
-    background-color: white;
 
-}
 
 .footer2{
     height: 10vh;
     width: 100vw;
     background-color: black;
+    position: relative;
+    top: 45vh;
 }
+    
+}
+
+@media screen and (min-width:700px ) {
+*{
+    padding: 0;
+    margin:  0;
+}
+
+body{
+    height: 300vh;
+    width: 100vw;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    padding: 0;
+    margin: 0;
+    height: 100vh ;
+    width:100%;
+    background-image: url(media/bgc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.topbar{
+    height: 10vh;
+    width:  100vw;
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    
+
+}
+
+#logo{
+    padding-top:1vh;
+    padding-left: 4vw;
+    height: 20vh;
+    width: 10vw;
+ 
+    overflow-y: auto;
+}
+
+
+
+
+#menu{
+    padding-top: 2vh;
+    padding-right: 2vw;
+    height: 5vh;
+    width: 10vw;
+    overflow-y: auto;
+}
+
+#main{
+    color: oldlace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:6vw ;
+    text-align: center;
+    word-spacing: 2vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sub{
+
+    padding:10vw 10vw;
+    color: oldlace;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 375;
+    font-size: 3vw;
+    text-align: center;
+    word-spacing: 1vw;
+}
+
+.destinationform{
+    background-color:#fff ;
+    height: 80vh;
+    width: 90vw;
+    padding-top: 3vh;
+    margin-left:15vw ;
+    margin-right:15vw ;
+    margin-top: 15vw;
+    margin-bottom: 15vw;
+    border-radius: 5vw;
+    border: 1vw black none;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    box-shadow: 01px 0.5px 25px  rgb(202, 191, 191);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+    align-items: center;
+    position: relative;
+    top:-50vh;
+    z-index: 1;
+    overflow: auto;
+
+}
+
+.toppart{
+    height: 100px;
+    width: 200px;
+}
+.head2{
+    /* padding-top: 10%; */
+    opacity:20%;
+    font-size: medium;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.head3{
+        padding-top: 3%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+form{
+    padding-left: 0 4vw;
+    margin: 1vh 3vw;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.first{
+    height: 100px;
+    width: 80px;
+}
+
+input[type=text]{
+    width: 100%;
+    height: 5vh;
+    border-radius: 10vw;
+    box-sizing: border-box;
+    padding:5%  ;
+    font-size: 4vw;
+    font-weight: 400;
+}
+
+
+
+input[type=date]{
+    width: 100%;
+    height: 5vh;
+    border-radius: 10vw;
+    box-sizing: border-box;
+    padding: 5%;
+    font-size: 3.5vw;
+    font-weight: 400;
+
+}
+
+
+
+.submit{
+    
+    background-color: rgb(250, 60, 95);
+    font-family:        Helvetica, sans-serif;
+    font-size: large;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 40vw;
+    width: 80%;
+    height: 15vw;
+    box-sizing: border-box;
+    padding: .25vw;
+    margin: 10%;
+}
+
+label{
+    opacity: 40%;
+    padding-left: 5%;
+    font-size: small;
+}
+
+.packages{
+    height: 97vh;
+    width: 75vw;
+    /* border: 1px black solid; */
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+    border-radius: 5vw;
+
+    /* box-sizing: border-box; */
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    position: relative;
+    top: -7vh;
+    overflow: auto;
+
+}
+
+.packageHead3{
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 200;
+    text-align: center;
+}
+
+.packagehead2{
+
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+
+}
+
+.packagebox{
+    background-color: #fff;
+    box-sizing: border-box;
+    display: flex;
+    padding: 5% 5%;
+    height: 67vh;
+    width: 75vw;
+    flex-direction: row;
+    /* border: 1px black solid; */
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center ;
+
+    column-gap: 2vw;
+    row-gap: 2vw;
+}
+
+.packagesOptionsPair{
+    box-sizing: border-box;
+    display: flex;
+    height: 35vh;
+    width: 65vw;
+    /* border: 1px black solid; */
+    padding: 2.5%;
+    column-gap: 05vw;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    
+
+}
+
+
+/* Over the packages we can add a small enlarge animation like the on actual sites */
+
+.package1{
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    padding: 1% 1%;
+
+    /* border: 1px orange solid; */
+    background-image: url(media/brasil.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+    overflow: hidden;
+}
+
+.package2{
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    /* border: 1px orange solid; */
+    background-image: url(media/crotia.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    border-radius: 3vw;
+}
+.package3{
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    /* border: 1px orange solid; */
+    background-image: url(media/rome.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+    overflow: hidden;
+
+}
+
+.package4{
+    padding: 1% 1%;
+    display: flex;
+    flex-direction: column  ;
+    justify-content:flex-end;
+    /* border: 1px orange solid; */
+    background-image: url(media/megh.jpg);
+    height: 32vh;
+    width: 35vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 3vw;
+    overflow: hidden;
+
+
+}
+
+.pacakgename{
+    font-family: Helvetica;
+    font-size: 5vw;
+    color:azure;
+    text-align: left;
+    font-weight: 600;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+
+}
+
+.packageduration{
+    font-family: Helvetica;
+    font-size: 3vw;
+    color:azure;
+    text-align: left;
+    font-weight: 400;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+    bottom: 0;
+}
+
+.recommendations{
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 270vh;
+    width: 75vw;
+    /* border: 1px black solid; */
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+    border-radius: 5vw;
+
+    /* box-sizing: border-box; */
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    gap: 5vw 0vw;
+}
+
+.rec_cards{
+    background-color: #fff;
+    padding: 5%;
+    margin: 5%;
+    height: 50vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    border-radius: 5vw;
+overflow: auto;
+
+}
+
+#rec1{
+
+    height: 30vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    background-image: url(media/beach1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.lines{
+    display: flex;
+    flex-direction: column;
+    row-gap: 2vw;
+}
+
+.rating{
+    /* border: 1px black solid; */
+    position: relative;
+    top:0.5vh ;
+    right: -6vw;
+    padding:1% 1%;
+    height: 20px;
+    width: 20px;
+    background-image: url(media/star.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.line1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between ;
+    font-family: Helvetica, sans-serif;
+}
+
+.line1 h2{
+    padding: 2%;
+    font-size: larger;
+    position: relative;
+    top: 1vw;
+}
+
+.rat_val{
+    position: relative;
+    bottom: -1.25vw;
+    right: 3vw;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: larger ;
+    font-weight: bolder;
+}
+
+.line3{
+    font-family: helvetica;
+    height: 4%;
+    /* padding: 5%; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    top: 7.5vw;
+    
+}
+
+.book{
+    position: relative;
+    right: 6vw;
+    top:-3vw ;
+    width: 25vw;
+    height: 7vw;
+    background-color: rgb(250, 60, 95);
+    font-family:        Helvetica, sans-serif;
+    font-size: small;
+    text-align: center;
+    color: aliceblue;
+    border-radius: 40vw;
+    padding: .25vw;
+    margin: 10%;
+}
+.cost{
+    position: relative;
+    top: 5px;
+}
+
+.cost p{
+    padding-left: 0 2vh;
+    position: relative;
+    left: 3vw;
+
+}
+
+.rec_des{
+    padding: 0 2vw ;
+    font-family: Helvetica, sans-serif;
+    text-align: left;
+    opacity: 30%;
+    position: relative;
+    top: 8vw;
+    font-size: medium;
+}
+
+#rec2{
+
+    height: 30vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    background-image: url(media/beach2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#rec3{
+
+    height: 30vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    background-image: url(media/beach3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+#rec4{
+
+    height: 30vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    background-image: url(media/beach4.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+.articles{
+    position: relative;
+    top: 17vw;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 220vh;
+    width: 75vw;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px black solid; */
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    overflow: scroll;
+    border-radius: 5vw;
+
+    /* box-sizing: border-box; */
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    gap: 5vw 0vw;
+
+}
+
+#art1{
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+    background-image: url(media/paris.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#art2{
+    height: 50vh;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+
+
+    background-image: url(media/lumpur.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#art3{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 50vh;
+    width: 70vw;
+    /* border: 1px black solid; */
+    border-top-right-radius:2.5vw;
+    border-top-left-radius: 2.5vw;
+    border-bottom-left-radius: 2.5vw;
+    border-bottom-right-radius: 2.5vw;
+    background-image: url(media/venice.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title{
+
+    color: aliceblue;
+    font-family: Helvetica, sans-serif;
+    padding: 3%;
+    text-align: left;
+    font-weight: 600;
+    text-shadow: 10px 10px 40px red(0, 0, 0, 0.7);
+    
+
+}
+
+.line{
+    height: 0.1px;
+    width: 100vw;
+    border: 1px solid black;
+    position: relative;
+    top: 15vh;
+}
+
+.footer{
+    background-color:white ;
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    top: 15vh;
+}
+
+#footer_title{
+    color: black;
+    text-align: center;
+    position: relative;
+    top : 10vh;
+    font-family: 'helvetica' ;
+
+}
+
+
+
+.footer2{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    position: relative;
+    top: 45vh;
+}
+    
+}
+
+
+
