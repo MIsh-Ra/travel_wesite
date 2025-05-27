@@ -642,6 +642,9 @@ overflow: auto;
 body{
     height: 300vh;
     width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
 }
 .main{
     display: flex;
@@ -720,54 +723,74 @@ body{
 
 .destinationform{
     background-color:#fff ;
-    height: 80vh;
-    width: 90vw;
+    height: 45vh;
+    width: 89.6vw;
     padding-top: 3vh;
-    margin-left:15vw ;
-    margin-right:15vw ;
-    margin-top: 15vw;
-    margin-bottom: 15vw;
+    margin-left:1.5vw ;
+    margin-right:1.5vw ;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
     border-radius: 5vw;
     border: 1vw black none;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     box-shadow: 01px 0.5px 25px  rgb(202, 191, 191);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-evenly;
     
     align-items: center;
     position: relative;
-    top:-50vh;
+    top:-25vh;
     z-index: 1;
     overflow: auto;
 
 }
 
+/* .locationBox{
+    width: 140px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    
+} */
+
 .toppart{
-    height: 100px;
-    width: 200px;
+    height: 10vh;
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+
+
 }
+
+
 .head2{
     /* padding-top: 10%; */
     opacity:20%;
-    font-size: medium;
+    font-size: x-large;
     padding-left: 10%;
     padding-right: 10%;
+      white-space: nowrap;
 }
 
 .head3{
+        /* width: 90px; */
         padding-top: 3%;
     padding-left: 10%;
     padding-right: 10%;
+    font-size: x-large;
+  white-space: nowrap;
 }
 
 form{
+    height: 15vh;;
     padding-left: 0 4vw;
     margin: 1vh 3vw;
-    width: 80vw;
+    width: 75vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .first{
@@ -776,7 +799,7 @@ form{
 }
 
 input[type=text]{
-    width: 100%;
+    width: 10vw;
     height: 5vh;
     border-radius: 10vw;
     box-sizing: border-box;
@@ -788,7 +811,7 @@ input[type=text]{
 
 
 input[type=date]{
-    width: 100%;
+    width: 10vw;
     height: 5vh;
     border-radius: 10vw;
     box-sizing: border-box;
@@ -808,37 +831,52 @@ input[type=date]{
     text-align: center;
     color: aliceblue;
     border-radius: 40vw;
-    width: 80%;
-    height: 15vw;
+    width: 15vw;
+    height: 6vh;
     box-sizing: border-box;
-    padding: .25vw;
-    margin: 10%;
+    padding: 0.25vw;
+    margin: 1%;
+    position: relative;
+    top: 0.4vw;
+    left:3vw ;
 }
 
 label{
     opacity: 40%;
     padding-left: 5%;
-    font-size: small;
+    font-size: large;
 }
 
 .packages{
-    height: 97vh;
-    width: 75vw;
+    height: 90vh;
+    width: 80vw;
     /* border: 1px black solid; */
     padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    overflow: scroll;
+    overflow-y: hidden;
+    overflow-x: scroll;
     border-radius: 5vw;
 
     /* box-sizing: border-box; */
     box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
     position: relative;
-    top: -7vh;
+    top: -12vh;
     overflow: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
+}
+
+.textarea{
+    height: 7.5vh;
+    width: 70vw;
+    padding: 1vh;
+    margin: 1vh ;
 }
 
 .packageHead3{
@@ -860,15 +898,15 @@ label{
     background-color: #fff;
     box-sizing: border-box;
     display: flex;
-    padding: 5% 5%;
-    height: 67vh;
-    width: 75vw;
-    flex-direction: row;
+    padding: 1 0.5vw;
+    height: 65vh;
+    width: 80vw;
+    flex-direction: column;
     /* border: 1px black solid; */
     flex-wrap: wrap;
     justify-content: center;
     align-items: center ;
-
+    overflow: hidden;
     column-gap: 2vw;
     row-gap: 2vw;
 }
@@ -888,7 +926,7 @@ label{
 }
 
 
-/* Over the packages we can add a small enlarge animation like the on actual sites */
+/* Over the packages we can add a small enlarge animation like on actual sites */
 
 .package1{
     display: flex;
@@ -898,12 +936,12 @@ label{
 
     /* border: 1px orange solid; */
     background-image: url(media/brasil.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 50vh;
+    width: 16.85vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 3vw;
+    border-radius: 1.5vw;
     overflow: hidden;
 }
 
@@ -914,13 +952,14 @@ label{
     justify-content:flex-end;
     /* border: 1px orange solid; */
     background-image: url(media/crotia.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 50vh;
+    width: 16.85vw;
+    
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
-    border-radius: 3vw;
+    border-radius: 1.5vw;
 }
 .package3{
     padding: 1% 1%;
@@ -929,12 +968,13 @@ label{
     justify-content:flex-end;
     /* border: 1px orange solid; */
     background-image: url(media/rome.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 50vh;
+    width: 16.85vw;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 3vw;
+    border-radius: 1.5vw;
     overflow: hidden;
 
 }
@@ -946,12 +986,13 @@ label{
     justify-content:flex-end;
     /* border: 1px orange solid; */
     background-image: url(media/megh.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 50vh;
+    width: 16.85vw;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border-radius: 3vw;
+    border-radius: 1.5vw;
     overflow: hidden;
 
 
@@ -959,7 +1000,7 @@ label{
 
 .pacakgename{
     font-family: Helvetica;
-    font-size: 5vw;
+    font-size: 2vh;
     color:azure;
     text-align: left;
     font-weight: 600;
@@ -969,7 +1010,7 @@ label{
 
 .packageduration{
     font-family: Helvetica;
-    font-size: 3vw;
+    font-size: 1.5vh;
     color:azure;
     text-align: left;
     font-weight: 400;
@@ -984,7 +1025,7 @@ label{
     justify-content: space-evenly;
     align-items: center;
     height: 270vh;
-    width: 75vw;
+    width: 80vw;
     /* border: 1px black solid; */
     padding-top: 2%;
     padding-left: 5%;
@@ -997,6 +1038,8 @@ label{
     /* box-sizing: border-box; */
     box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
     gap: 5vw 0vw;
+    position: relative;
+    /* top: 40vh; */
 }
 
 .rec_cards{
@@ -1168,7 +1211,7 @@ overflow: auto;
     justify-content: space-between;
     flex-direction: column;
     height: 220vh;
-    width: 75vw;
+    width: 80vw;
     justify-content: space-between;
     align-items: center;
     /* border: 1px black solid; */

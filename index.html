@@ -46,41 +46,44 @@
         <form  id="form1">
             <div class="first">
                 <label for="Location">Location </label>
-                <input type="text" id="Location" name="Location" >
+                <input type="text" class="inp_f" id="Location" name="Location" >
             </div>
             <br>
 
             <div class="first">
-                <label for="check-in"> check-in </label>
-                <input type="date" id="check-in" name="check-in">
+                <label for="check-in"> checkin </label>
+                <input type="date" class="inp_f" id="check-in" name="check-in">
 
             </div>
             <br>
 
             <div class="first">
-                <label for="check-out">check-out</label>
-                <input type="date" id="check-out" name="check-out">
+                <label for="check-out">checkout</label>
+                <input type="date"class="inp_f" id="check-out" name="check-out">
             </div>
 
             <br>
             <div class="first">
                 <label for="guest">Guest</label>
-                <input type="text" id="guest" name="guest">
+                <input type="text" class="inp_f" id="guest" name="guest">
 
             </div>
+            <button class="submit">Search</button>
+
             <br>
         </form>
 
-        <button class="submit">Search</button>
     </div>
 
     <div class="packages">
-        <h2 class="packagehead2">Popular Packages  </h2>
-        <h3 class="packageHead3">Try a variety of benefits when using our serivces</h3>
+        <div class="textarea">
+            <h2 class="packagehead2">Popular Packages  </h2>
+            <h3 class="packageHead3">Try a variety of benefits when using our serivces</h3>
+        </div>
 
         <div class="packagebox">
 
-            <div class="packagesOptionsPair">
+            <!-- <div class="packagesOptionsPair"> -->
 
                 <div class="package1">
 
@@ -105,9 +108,9 @@
                     </h3>
                 </div>
 
-            </div>
+            <!-- </div> -->
 
-            <div class="packagesOptionsPair">
+            <!-- <div class="packagesOptionsPair"> -->
 
                 <div class="package3">
 
@@ -131,8 +134,12 @@
                     </h3>
                 </div>
 
-            </div>
+            <!-- </div> -->
 
+
+        </div>
+
+        <div class="morepack">
         <button class="submit">More Packages</button>    
         </div>
     </div>
