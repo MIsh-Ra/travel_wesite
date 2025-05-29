@@ -178,6 +178,7 @@ label{
     margin-left: 5%;
     margin-right: 5%;
     overflow-y:hidden;
+    overflow-x:hidden;
     border-radius: 5vw;
 
     /* box-sizing: border-box; */
@@ -215,7 +216,7 @@ label{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center ;
-
+    overflow: hidden;
     column-gap: 2vw;
     row-gap: 2vw;
 }
@@ -230,6 +231,7 @@ label{
     column-gap: 05vw;
     flex-direction: row;
     flex-wrap: nowrap;
+    overflow: hidden;
     
 
 }
@@ -245,8 +247,8 @@ label{
 
     /* border: 1px orange solid; */
     background-image: url(media/brasil.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 25vh;
+    width: 40vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -261,8 +263,8 @@ label{
     justify-content:flex-end;
     /* border: 1px orange solid; */
     background-image: url(media/crotia.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 25vh;
+    width: 40vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -276,8 +278,8 @@ label{
     justify-content:flex-end;
     /* border: 1px orange solid; */
     background-image: url(media/rome.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 25vh;
+    width: 40vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -293,8 +295,8 @@ label{
     justify-content:flex-end;
     /* border: 1px orange solid; */
     background-image: url(media/megh.jpg);
-    height: 32vh;
-    width: 35vw;
+    height: 25vh;
+    width: 40vw;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -520,8 +522,8 @@ overflow: auto;
     flex-direction: column;
     height: 220vh;
     width: 75vw;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: center;
+    align-items:self-start;
     /* border: 1px black solid; */
     padding-top: 2%;
     padding-left: 5%;
@@ -1026,7 +1028,7 @@ label{
     bottom: 0;
 }
 
-.recommendations{
+.recommendations {
     background-color: #fff;
     display: flex;
     flex-direction: column;
@@ -1034,216 +1036,171 @@ label{
     align-items: center;
     height: 200vh;
     width: 80vw;
-    /* border: 1px black solid; */
     padding-top: 2%;
     padding-left: 5%;
     padding-right: 5%;
     margin-left: 5%;
     margin-right: 5%;
-    overflow: scroll;
+    overflow: hidden;
     border-radius: 5vw;
-
-    /* box-sizing: border-box; */
-    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
-    gap: 2.5vh 0vw;
+    box-shadow: 0 1px 25px rgb(236, 220, 220);
+    gap: 2.5vh;
     position: relative;
-    /* top: 40vh; */
 }
-.recpart1{
+
+.recpart1,
+.recpart2 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    row-gap: 2vw;
-    column-gap: 2vw;
+    gap: 2.5vh;
 }
-.recpart2{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    row-gap: 2vw;
-    column-gap: 2vw;
-}
-.headbox{
+
+.headbox {
     height: 20vh;
     width: 60vw;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 2vh;
+    text-align: center;
 }
-.fortheflex{
-    height: auto;
+
+.fortheflex {
     width: 90vw;
     display: flex;
     justify-content: space-around;
-    align-items: center;
-    row-gap: 5vw;
+    align-items: flex-start;
+    gap: 5vw;
 }
-.rec_cards{
+
+.rec_cards {
     background-color: #fff;
-    padding: 0.5%;
-    margin: 0.5%;
+    padding: 1%;
+    margin: 1%;
     height: 75vh;
     width: 37vw;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px black solid; */
-    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    box-shadow: 0 1px 25px rgb(236, 220, 220);
     border-radius: 2vw;
-overflow: auto;
-
+    overflow: hidden;
 }
 
-#rec1{
-
+#rec1,
+#rec2,
+#rec3,
+#rec4 {
     height: 30vh;
-    width: 35vw;
-    padding: 0.5vh;
-    /* border: 1px black solid; */
-    border-top-right-radius:2.5vw;
-    border-top-left-radius: 2.5vw;
-    background-image: url(media/beach1.jpg);
-    background-position:center;
+    width: 100%;
+    border-top-right-radius: 1.5vw;
+    border-top-left-radius: 1.5vw;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size:cover;
-    /* overflow: hidden; */
-    
+    background-size: cover;
 }
 
-.lines{
+#rec1 {
+    background-image: url(media/beach1.jpg);
+}
+
+#rec2 {
+    background-image: url(media/beach2.jpg);
+}
+
+#rec3 {
+    background-image: url(media/beach3.jpg);
+}
+
+#rec4 {
+    background-image: url(media/beach4.jpg);
+}
+
+.lines {
     display: flex;
     flex-direction: column;
-    /* row-gap: 2vw; */
+    padding: 0 1.5vw;
+    gap: 1.5vh;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
-.rating{
-    /* border: 1px black solid; */
-    position: relative;
-    top:0.5vh ;
-    right: -6vw;
-    padding:1% 1%;
-    height: 20px;
-    width: 20px;
+.line1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+}
+
+.line1 h2 {
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+.rating {
+    display: none;
+    height: 2vh;
+    width: 2vh;
     background-image: url(media/star.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.line1{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between ;
-    font-family: Helvetica, sans-serif;
-}
-
-.line1 h2{
-    padding: 2%;
-    font-size: larger;
-    position: relative;
-    top: 1vw;
-}
-
-.rat_val{
-    position: relative;
-    bottom: -1.25vw;
-    right: 3vw;
+.rat_val {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: larger ;
-    font-weight: bolder;
+    font-size: 1.1vw;
+    font-weight: bold;
+    margin-left: 0.5vw;
 }
 
-.line3{
-    font-family: helvetica;
-    height: 4%;
-    /* padding: 5%; */
+.line2 .rec_des {
+    font-family: Helvetica, sans-serif;
+    font-size: 1vw;
+    opacity: 0.6;
+    text-align: left;
+}
+
+.line3 {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-    position: relative;
-    top: 7.5vw;
-    
+    align-items: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 1vw;
 }
 
-.book{
-    /* position: relative;
-    right: 6vw;
-    top:-3vw ; */
+.cost p {
+    padding-left: 1vw;
+}
+
+.book {
     width: 15vw;
     height: 7vh;
     background-color: rgb(250, 60, 95);
-    font-family:        Helvetica, sans-serif;
-    font-size: small;
+    font-family: Helvetica, sans-serif;
+    font-size: 1vw;
     text-align: center;
     color: aliceblue;
     border-radius: 40vw;
-    padding: .25vw;
-    margin: 1%;
-}
-.cost{
-    position: relative;
-    top: 5px;
+    padding: 0.5vw;
 }
 
-.cost p{
-    padding-left: 0 2vh;
-    position: relative;
-    left: 3vw;
-
+.morerecs {
+    margin-top: 2vh;
 }
 
-.rec_des{
-    padding: 0 0.5vw ;
+.submit {
+    width: 20vw;
+    height: 6vh;
+    background-color: rgb(48, 167, 255);
+    color: white;
     font-family: Helvetica, sans-serif;
-    text-align: left;
-    opacity: 30%;
-    position: relative;
-    top: 8vw;
-    font-size: medium;
-}
-
-#rec2{
-
-    height: 30vh;
-    width: 30vw;
-    /* border: 1px black solid; */
-    border-top-right-radius:2.5vw;
-    border-top-left-radius: 2.5vw;
-    background-image: url(media/beach2.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-#rec3{
-
-    height: 30vh;
-    width: 30vw;
-    /* border: 1px black solid; */
-    border-top-right-radius:2.5vw;
-    border-top-left-radius: 2.5vw;
-    background-image: url(media/beach3.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
-}
-
-#rec4{
-
-    height: 30vh;
-    width: 30vw;
-    /* border: 1px black solid; */
-    border-top-right-radius:2.5vw;
-    border-top-left-radius: 2.5vw;
-    background-image: url(media/beach4.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+    font-size: 1.2vw;
+    border-radius: 3vw;
+    cursor: pointer;
 }
 
 .articles{
@@ -1251,9 +1208,9 @@ overflow: auto;
     top: 17vw;
     background-color: #fff;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-direction: column;
-    height: 220vh;
+    height: 110vh;
     width: 80vw;
     justify-content: space-between;
     align-items: center;
@@ -1269,20 +1226,18 @@ overflow: auto;
     /* box-sizing: border-box; */
     box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
     gap: 5vw 0vw;
+    overflow: hidden;
 
 }
 
 #art1{
     height: 50vh;
-    width: 70vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: end;
     /* border: 1px black solid; */
-    border-top-right-radius:2.5vw;
-    border-top-left-radius: 2.5vw;
-    border-bottom-left-radius: 2.5vw;
-    border-bottom-right-radius: 2.5vw;
+    border-radius: 1.5vw;
     background-image: url(media/paris.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1291,17 +1246,12 @@ overflow: auto;
 
 #art2{
     height: 50vh;
-    width: 70vw;
+    width: 25vw;
     display: flex;
     flex-direction: column;
     justify-content: end;
     /* border: 1px black solid; */
-    border-top-right-radius:2.5vw;
-    border-top-left-radius: 2.5vw;
-    border-bottom-left-radius: 2.5vw;
-    border-bottom-right-radius: 2.5vw;
-
-
+    border-radius: 1.5vw;
     background-image: url(media/lumpur.jpg);
     background-position: center;
     background-repeat: no-repeat;
@@ -1313,18 +1263,36 @@ overflow: auto;
     flex-direction: column;
     justify-content: end;
     height: 50vh;
-    width: 70vw;
+    width: 25vw;
     /* border: 1px black solid; */
-    border-top-right-radius:2.5vw;
-    border-top-left-radius: 2.5vw;
-    border-bottom-left-radius: 2.5vw;
-    border-bottom-right-radius: 2.5vw;
+    border-radius: 1.5vw;
     background-image: url(media/venice.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
+.rec_cards2{
+    background-color: #fff;
+    padding: 0.5%;
+    margin: 0.5%;
+    height: 50vh;
+    width: 37vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* border: 1px black solid; */
+    box-shadow: 01px 0.5px 25px  rgb(236, 220, 220);
+    border-radius: 2vw;
+overflow: auto;
 
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 80vw;;
+}
 .title{
 
     color: aliceblue;
