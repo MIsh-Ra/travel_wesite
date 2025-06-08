@@ -812,7 +812,8 @@ input[type=text]{
     border-radius: 10vw;
     box-sizing: border-box;
     padding:5%  ;
-    font-size: 4vw;
+    font-size: 1rem;
+    text-align: center;
     font-weight: 400;
 }
 
@@ -824,7 +825,8 @@ input[type=date]{
     border-radius: 10vw;
     box-sizing: border-box;
     padding: 5%;
-    font-size: 3.5vw;
+    font-size: 0.75rem;
+    text-align: center;
     font-weight: 400;
 
 }
