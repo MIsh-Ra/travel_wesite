@@ -330,6 +330,8 @@ label{
     bottom: 0;
 }
 
+/*  */
+
 .recommendations{
     background-color: #fff;
     display: flex;
@@ -512,6 +514,8 @@ overflow: auto;
     background-size: cover;
     
 }
+
+/*  */
 
 .articles{
     position: relative;
